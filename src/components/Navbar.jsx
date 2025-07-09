@@ -87,7 +87,7 @@ export default function Navbar({toggleDarkMode,darkMode}) {
 
               {/* Bookmark */}
               <Link to="/mylist">
-                <FaBookmark className={`text-white text-xl cursor-pointer ${darkMode? "text-[#1b0b0b]": "text-white"}`} />
+                <FaBookmark className={`text-white text-xl cursor-pointer max-sm:mr-3 ${darkMode? "text-[#1b0b0b]": "text-white"}`} />
               </Link>
 
               {/* Avatar */}
