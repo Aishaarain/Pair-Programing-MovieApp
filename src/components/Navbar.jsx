@@ -87,7 +87,7 @@ export default function Navbar({toggleDarkMode,darkMode}) {
 
               {/* Bookmark */}
               <Link to="/mylist">
-                <FaBookmark className={`text-white text-xl cursor-pointer max-sm:mr-3 ${darkMode? "text-[#1b0b0b]": "text-white"}`} />
+                <FaBookmark className={`text-white text-xl cursor-pointer max-sm:mr-4 ${darkMode? "text-[#1b0b0b]": "text-white"}`} />
               </Link>
 
               {/* Avatar */}
@@ -162,7 +162,7 @@ export default function Navbar({toggleDarkMode,darkMode}) {
           <Link to="/" className="hover:text-gray-300" onClick={closeSidebar}>
             Home
           </Link>
-           <Link to="/Movies" className="hover:text-gray-300" onClick={closeSidebar}>
+           <Link to="/" className="hover:text-gray-300" onClick={closeSidebar}>
             Movies
           </Link>
           <Link to="/tvshow" className="hover:text-gray-300" onClick={closeSidebar}>
