@@ -162,9 +162,6 @@ export default function Navbar({toggleDarkMode,darkMode}) {
           <Link to="/" className="hover:text-gray-300" onClick={closeSidebar}>
             Home
           </Link>
-           <Link to="/" className="hover:text-gray-300" onClick={closeSidebar}>
-            Movies
-          </Link>
           <Link to="/tvshow" className="hover:text-gray-300" onClick={closeSidebar}>
             TV Shows
           </Link>
