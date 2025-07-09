@@ -45,7 +45,7 @@ export default function Navbar({toggleDarkMode,darkMode}) {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <img src="/cinescope.svg" alt="" />
-              <span className="text-lg font-bold">CineScope</span>
+             <Link to='/'> <span className="text-lg font-bold">CineScope</span></Link>
             </div>
 
             {/* Nav Links */}
