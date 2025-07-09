@@ -5,7 +5,7 @@ import TVShowList from "./components/tvShowlist.jsx";
 import ShowDetails from "./pages/ShowDetails.jsx";
 import PeopleList from "./components/peopleList.jsx";
 import Navbar from "./components/Navbar";
-import Home from "./Pages/Home";
+import Home from "./pages/Home.jsx";
 import SearchBar from "./components/SearchBar";
 import GenreFilter from "./components/GenreFilter";
 import YearFilter from "./components/YearFilter";
