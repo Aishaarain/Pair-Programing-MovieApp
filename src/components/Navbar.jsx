@@ -68,9 +68,9 @@ export default function Navbar({toggleDarkMode,darkMode}) {
                     onKeyDown={handleSearchKey}
                     type="text"
                     placeholder="Search"
-                    className="bg-[#441f1f] text-white max-sm:w-20 w-30 text-sm rounded-md pl-8 pr-4 py-1 placeholder-gray-400 focus:outline-none focus:ring-2 focus:w-60 focus:ring-red-500 uppercase"
+                    className="bg-[#441f1f] text-white max-sm:w-20 w-30 text-sm rounded-md pl-8 pr-4 py-1 placeholder-gray-400 focus:outline-none focus:ring-2 max-sm:ml-2  md:focus:w-60 focus:ring-red-500 uppercase"
                   />
-                  <span className="absolute left-6 top-5 text-sm text-gray-400">
+                  <span className="absolute max-sm:left-7 left-6 top-5 text-sm text-gray-400">
                     <FaSearch className="w-4 h-4" />
                   </span>
                 </div>
@@ -87,7 +87,7 @@ export default function Navbar({toggleDarkMode,darkMode}) {
 
               {/* Bookmark */}
               <Link to="/mylist">
-                <FaBookmark className={`text-white text-xl cursor-pointer max-sm:mr-4 ${darkMode? "text-[#1b0b0b]": "text-white"}`} />
+                <FaBookmark className={` text-xl cursor-pointer max-sm:mr-3 ${darkMode? "text-[#1b0b0b]": "text-white"}`} />
               </Link>
 
               {/* Avatar */}
