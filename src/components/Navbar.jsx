@@ -43,8 +43,8 @@ export default function Navbar({toggleDarkMode,darkMode}) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <img src="/cinescope.svg" alt="" />
+            <div className="flex items-center space-x-2 ">
+              <img className="fill-[#1d0f0f]" src="/cinescope.svg" alt="" />
              <Link to='/'> <span className="text-lg font-bold">CineScope</span></Link>
             </div>
 
@@ -68,9 +68,9 @@ export default function Navbar({toggleDarkMode,darkMode}) {
                     onKeyDown={handleSearchKey}
                     type="text"
                     placeholder="Search"
-                    className="bg-[#441f1f] max-sm:hidden text-white max-sm:w-20 w-30 text-sm rounded-md pl-8 pr-4 py-1 placeholder-gray-400 focus:outline-none focus:ring-2 max-sm:ml-2  md:focus:w-60 focus:ring-red-500 uppercase"
-                  />
-                  <span className="absolute cursor-pointer max-sm:left-2 max-sm:top-3 max-sm:text-yellow-700 left-6 top-5 text-sm text-gray-400">
+                    className="bg-[#441f1f] text-white max-sm:hidden max-sm:w-20 w-30 text-sm rounded-md pl-8 pr-4 py-1 placeholder-gray-400 focus:outline-none focus:ring-2 max-sm:ml-2  md:focus:w-60 focus:ring-red-500 uppercase"
+                  /> 
+                  <span className="absolute cursor-pointer left-6 max-sm:left-2 top-5 text-sm text-gray-400 max-sm:top-3 max-sm:text-yellow-700">
                     <FaSearch  onClick={handleSearchClick} className="w-4 h-4" />
                   </span>
                 </div>
@@ -79,7 +79,7 @@ export default function Navbar({toggleDarkMode,darkMode}) {
               {/* Dark Mode Toggle */}
               <button
                 onClick={toggleDarkMode}
-                className="text-xl hover:text-yellow-400"
+                className="text-xl hover:text-yellow-400 "
                 title="Toggle Dark Mode"
               >
                 {darkMode ? <FaSun /> : <FaMoon />}
@@ -87,14 +87,13 @@ export default function Navbar({toggleDarkMode,darkMode}) {
 
               {/* Bookmark */}
               <Link to="/mylist">
-                <FaBookmark className={` text-xl cursor-pointer max-sm:mr-3 ${darkMode? "text-[#1b0b0b]": "text-white"}`} />
+                <FaBookmark className={` text-xl cursor-pointer  max-sm:mr-3 ${darkMode? "text-[#1b0b0b]": "text-white"}`} />
               </Link>
 
               {/* Avatar */}
               <img
                 src="/profile.jpg"
                 alt="profile"
-                
                 className="w-8 h-8 max-sm:hidden rounded-full object-cover"
               />
             </div>
@@ -113,11 +112,10 @@ export default function Navbar({toggleDarkMode,darkMode}) {
 
       {/* Search Overlay */}
       {showOverlay && (
-        <div className="inset-0 max-sm:hidden flex-row flex justify-center items-start pt-0 transition-all duration-300">
+        <div className="inset-0  flex-row flex justify-center items-start pt-0 transition-all duration-300">
           <div className="p-4 z-20 flex flex-row">
             <input
               value={searchValue}
-             
               onChange={(e) => setSearchValue(e.target.value)}
               onKeyDown={handleSearchKey}
               type="text"
@@ -161,6 +159,9 @@ export default function Navbar({toggleDarkMode,darkMode}) {
           
           <Link to="/" className="hover:text-gray-300" onClick={closeSidebar}>
             Home
+          </Link>
+           <Link to="/Movies" className="hover:text-gray-300" onClick={closeSidebar}>
+            Movies
           </Link>
           <Link to="/tvshow" className="hover:text-gray-300" onClick={closeSidebar}>
             TV Shows
