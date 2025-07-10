@@ -68,10 +68,10 @@ export default function Navbar({toggleDarkMode,darkMode}) {
                     onKeyDown={handleSearchKey}
                     type="text"
                     placeholder="Search"
-                    className="bg-[#441f1f] text-white max-sm:w-20 w-30 text-sm rounded-md pl-8 pr-4 py-1 placeholder-gray-400 focus:outline-none focus:ring-2 max-sm:ml-2  md:focus:w-60 focus:ring-red-500 uppercase"
+                    className="bg-[#441f1f] max-sm:hidden text-white max-sm:w-20 w-30 text-sm rounded-md pl-8 pr-4 py-1 placeholder-gray-400 focus:outline-none focus:ring-2 max-sm:ml-2  md:focus:w-60 focus:ring-red-500 uppercase"
                   />
-                  <span className="absolute max-sm:left-7 left-6 top-5 text-sm text-gray-400">
-                    <FaSearch className="w-4 h-4" />
+                  <span className="absolute cursor-pointer max-sm:left-2 max-sm:top-3 max-sm:text-yellow-700 left-6 top-5 text-sm text-gray-400">
+                    <FaSearch  onClick={handleSearchClick} className="w-4 h-4" />
                   </span>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function Navbar({toggleDarkMode,darkMode}) {
               onKeyDown={handleSearchKey}
               type="text"
               placeholder="Search"
-              className="bg-[#441f1f] text-white max-md:w-[500px] max-sm:w-[300px] w-[800px] text-sm rounded-md pl-8 pr-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="bg-[#441f1f] text-white max-md:w-[500px] max-sm:w-[200px] w-[800px] text-sm rounded-md pl-8 pr-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
             />
             <span className="absolute ml-2 mt-4 text-sm text-gray-400">
               <FaSearch className="w-4 h-4" />
