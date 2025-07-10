@@ -68,9 +68,9 @@ export default function Navbar({toggleDarkMode,darkMode}) {
                     onKeyDown={handleSearchKey}
                     type="text"
                     placeholder="Search"
-                    className="bg-[#441f1f] text-white max-sm:hidden max-sm:w-20 w-30 text-sm rounded-md pl-8 pr-4 py-1 placeholder-gray-400 focus:outline-none focus:ring-2 max-sm:ml-2  md:focus:w-60 focus:ring-red-500 uppercase"
+                    className="bg-[#441f1f] text-white  max-sm:w-20 w-30 text-sm rounded-md pl-8 pr-4 py-1 placeholder-gray-400 focus:outline-none focus:ring-2 max-sm:ml-2  md:focus:w-60 focus:ring-red-500 uppercase"
                   /> 
-                  <span className="absolute cursor-pointer left-6 max-sm:left-2 top-5 text-sm text-gray-400 max-sm:top-3 max-sm:text-yellow-700">
+                  <span className="absolute cursor-pointer left-6 max-sm:left-7  top-5 text-sm text-gray-400 max-sm:top-6">
                     <FaSearch  onClick={handleSearchClick} className="w-4 h-4" />
                   </span>
                 </div>
